@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/PersonalPortal/PersonalPortal/bin/PersonalPortal.dll.config
+/src/PersonalPortal/PersonalPortal/obj/Debug

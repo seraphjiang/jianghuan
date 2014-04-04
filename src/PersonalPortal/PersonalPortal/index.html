@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html class="ui-mobile-rendering" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Huan's professional mobile portal!</title>
+    <link rel="stylesheet" href="theme/df.min.css" />
+    <link rel="stylesheet" href="theme/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="profile">
+        <div data-role="header">
+            <h1>About Huan</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <img src="image/jianghuan.jpg" alt="Huan Jiang" />
+                    <h2>Huan Jiang</h2>
+                    <p>Web Developer</p>
+                </li>
+                <li data-role="list-divider">
+                    Summary
+                </li>
+                <li>
+                    <div class="list-item-text">
+                        <p>
+                            With 12+ years of experience in Web, Service and software development, I am an experienced veteran to build large scale web application and with hands-on experience on many popular frameworks, from emerging UX JS hot picks to backend stack.
+                        </p>
+                        <p>
+                            Currently, I worked in mscom infrastructure team that is in charge of running microsoft.com, the world’s largest enterprise portal with thousands of sites hosted. I am responsible to develop a platform that provides unified infrastructure for all hosted sites. Before that I worked at Microsoft China and EBay. These experiences helped to shape my design capability, promise of delivery and troubleshooting insights.
+                        </p>
+                        <p>
+                            In my spare time, I built my own garage projects, not only driven by interests but also to broaden my view on technology involving. I also followed engineering blogs from top companies. These have been very beneficial to help me keeping up with latest trend in many areas, including cloud computing, big data techniques and machine learning.
+                        </p>
+                        <p>
+                            As a service guy, I am passionate about troubleshooting. I believe it’s critical to be able to move quickly when something goes wrong. I am also a big believer of agile development. I enjoyed working in fast-pace team with ambitious goal set.
+                        </p>
+                    </div>
+                </li>
+                <li data-role="list-divider">
+                    Contact
+                </li>
+                <li>
+                    <div>
+                        mailto:seraphjiang@gmail.com<br />
+                        tel:+1(425)974-5717<br />
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a class="ui-btn-active ui-state-persist" data-icon="user" href="#profile">Me</a>
+                    </li>
+                    <li>
+                        <a href="#skill" data-icon="info">Skill</a>
+                    </li>
+                    <li>
+                        <a href="#exp" data-icon="search">Exp.</a>
+                    </li>
+                    <li>
+                        <a href="#more" data-icon="grid">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="skill">
+        <div data-role="header">
+            <h1>Skill</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#stack">
+                        <h2>Technology Stack</h2>
+                        <p>Microsoft stack</p>
+                        <p>Open stack</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#productivity">
+                        <h2>productivity</h2>
+                        <p>Engineering, Tools</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#design">
+                        <h2>Design</h2>
+                        <p>Design Skill</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#design">
+                        <h2>Philosophy</h2>
+                        <p>Design, Methodologies</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#profile" data-icon="user">Me</a>
+                    </li>
+                    <li>
+                        <a href="#skill" data-icon="info" class="ui-btn-active ui-state-persist">Skill</a>
+                    </li>
+                    <li>
+                        <a href="#exp" data-icon="search">Exp.</a>
+                    </li>
+                    <li>
+                        <a href="#more" data-icon="grid">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="exp">
+        <div data-role="header">
+            <h1>Experience</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">
+                    microsoft.com<span class="ui-li-count">3</span>
+                </li>
+                <li data-icon="false">
+                    <a>
+                        <div class="list-item-text">
+                            <p>
+                                <span class="first-word">Project</span>
+                                Content Management Service
+                            </p>
+                            <p>
+                                <span class="first-word">Responsibility</span>
+                                Design and implement, Application Cache, Site Creation, Image Find Dialog, Similar Image Finder, File Upload, Theme Editor, Ajax Proxy Module, Ajax Proxy Module(Worker edition), ADFS Integration in load balance
+                            </p>
+                            <p>
+                                <span class="first-word">Technology Stack</span>
+                                jQuery, HTML5, Handlebar,  canjs, ADFS, Visual Studio template development, nuget package development
+                            </p>
+                        </div>
+                        <p class="ui-li-aside"><strong>UX Developer</strong></p>
+                    </a>
+                </li>
+                <li data-icon="false">
+                    <a>
+                        <div class="list-item-text">
+                            <p>
+                                <span class="first-word">Project</span>
+                                Content Service Platform (Rendering)
+                            </p>
+                            <p>
+                                <span class="first-word">Responsibility</span>
+                                I’m the primary developer for CSP rendering which hosts 2000+ Microsoft include homepage, download center, portal for different business group like office365, surface. I am responsible for designing new capability like profile targeting, substitution cache, disk cache, virtual file system and performance optimization for CSP. I am also responsible for trouble shooting production incident which all have very high business impact. e.g. office 365 cache issue.
+                            </p>
+                            <p>
+                                <span class="first-word">Technology Stack</span>
+                                ASP.Net, .Net, WCF, Caching
+                            </p>
+                        </div>
+                        <p class="ui-li-aside">
+                            <strong>
+                                Platform Developer
+                            </strong>
+                        </p>
+                    </a>
+                </li>
+                <li data-icon="false">
+                    <a>
+                        <div class="list-item-text">
+                            <p>
+                                <span class="first-word">Project</span>
+                                FwLink/GoLink(go.microsoft.com)
+                            </p>
+                            <p>
+                                <span class="first-word">Responsibility</span>
+                                Reverse engineering on 10-year old project with less documentation, redesign and upgrade it to new version.
+                            </p>
+                            <p>
+                                <span class="first-word">Technology Stack</span>
+                                ASP.Net, .Net, XML WebService, Enterprise Library
+                            </p>
+                        </div>
+                        <p class="ui-li-aside">
+                            <strong>
+                                Leader Developer
+                            </strong>
+                        </p>
+                    </a>
+                </li>
+                <li data-role="list-divider">
+                    Microsoft RxD<span class="ui-li-count">3</span>
+                </li>
+                <li data-role="list-divider">
+                    eBay China Development Center<span class="ui-li-count">3</span>
+                </li>
+                <li data-role="list-divider">
+                    MSN<span class="ui-li-count">3</span>
+                </li>
+                <li data-role="list-divider">
+                    BENQ<span class="ui-li-count">3</span>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#profile" data-icon="user">Me</a>
+                    </li>
+                    <li>
+                        <a href="#skill" data-icon="info">Skill</a>
+                    </li>
+                    <li>
+                        <a class="ui-btn-active ui-state-persist" data-icon="search" href="#exp">Exp.</a>
+                    </li>
+                    <li>
+                        <a href="#more" data-icon="grid">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="more">
+        <div data-role="header">
+            <h1>More</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#stack">
+                        <h2>Technology Stack</h2>
+                        <p>Microsoft stack</p>
+                        <p>Open stack</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#profile" data-icon="user">Me</a>
+                    </li>
+                    <li>
+                        <a href="#skill" data-icon="info">Skill</a>
+                    </li>
+                    <li>
+                        <a href="#exp" data-icon="search">Exp.</a>
+                    </li>
+                    <li>
+                        <a class="ui-btn-active ui-state-persist" data-icon="grid" href="#more">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
