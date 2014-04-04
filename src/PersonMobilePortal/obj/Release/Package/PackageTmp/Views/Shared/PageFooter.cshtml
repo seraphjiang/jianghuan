@@ -1,0 +1,26 @@
+﻿@using PersonMobilePortal.Models
+@model PageModel
+
+<div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            @{
+                foreach (var btn in PageModel.NavButtons)
+                {
+                    var id = btn.Key.ToLowerInvariant();
+                    <li>
+
+                        @if (btn.Key.Equals(Model.NavButtonText, StringComparison.InvariantCultureIgnoreCase))
+                        {
+                            <a href="#@id" data-icon="@btn.Value" class="ui-btn-active ui-state-persist">@btn.Key</a>
+                        }
+                        else
+                        {
+                            <a href="#@id" data-icon="@btn.Value">@btn.Key</a>
+                        }
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+</div>

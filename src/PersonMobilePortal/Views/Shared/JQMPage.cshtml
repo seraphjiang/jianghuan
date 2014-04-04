@@ -1,0 +1,46 @@
+﻿<div data-role="page" id="profile">
+    <div data-role="header">
+        @RenderSection("PageHeader")
+    </div>
+    <div role="main" class="ui-content">
+        @RenderSection("PageContent")
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <img src="image/jianghuan.jpg" alt="Huan Jiang" />
+                <h2>Huan Jiang</h2>
+                <p>Web Developer</p>
+            </li>
+            <li data-role="list-divider">
+                Summary
+            </li>
+            <li>
+                <div class="list-item-text">
+                    <p>
+                        With 12+ years of experience in Web, Service and software development, I am an experienced veteran to build large scale web application and with hands-on experience on many popular frameworks, from emerging UX JS hot picks to backend stack.
+                    </p>
+                    <p>
+                        Currently, I worked in mscom infrastructure team that is in charge of running microsoft.com, the world’s largest enterprise portal with thousands of sites hosted. I am responsible to develop a platform that provides unified infrastructure for all hosted sites. Before that I worked at Microsoft China and EBay. These experiences helped to shape my design capability, promise of delivery and troubleshooting insights.
+                    </p>
+                    <p>
+                        In my spare time, I built my own garage projects, not only driven by interests but also to broaden my view on technology involving. I also followed engineering blogs from top companies. These have been very beneficial to help me keeping up with latest trend in many areas, including cloud computing, big data techniques and machine learning.
+                    </p>
+                    <p>
+                        As a service guy, I am passionate about troubleshooting. I believe it’s critical to be able to move quickly when something goes wrong. I am also a big believer of agile development. I enjoyed working in fast-pace team with ambitious goal set.
+                    </p>
+                </div>
+            </li>
+            <li data-role="list-divider">
+                Contact
+            </li>
+            <li>
+                <div>
+                    mailto:seraphjiang@gmail.com<br />
+                    tel:+1(425)974-5717<br />
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        @RenderSection("PageFooter")
+    </div>
+</div>

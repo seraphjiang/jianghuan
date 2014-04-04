@@ -1,0 +1,35 @@
+﻿@model PersonMobilePortal.Models.PageModel
+
+<div data-role="page" id="@Model.NavButtonText.ToLowerInvariant()">
+    @Html.Partial("PageHeader", Model)
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <a href="#stack">
+                    <h2>Technology Stack</h2>
+                    <p>Microsoft stack</p>
+                    <p>Open stack</p>
+                </a>
+            </li>
+            <li>
+                <a href="#productivity">
+                    <h2>productivity</h2>
+                    <p>Engineering, Tools</p>
+                </a>
+            </li>
+            <li>
+                <a href="#design">
+                    <h2>Design</h2>
+                    <p>Design Skill</p>
+                </a>
+            </li>
+            <li>
+                <a href="#design">
+                    <h2>Philosophy</h2>
+                    <p>Design, Methodologies</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    @Html.Partial("PageFooter")
+</div>

@@ -1,0 +1,9 @@
+﻿@using PersonMobilePortal.Models
+    @{
+        Html.RenderPartial("ProfilePage", new PageModel { Title = "About Me", Icon = "user", NavButtonText = "Profile"});
+        Html.RenderPartial("SkillPage", new PageModel { Title = "Skill", Icon = "skill", NavButtonText = "Skill" });
+        Html.RenderPartial("StackPage", new PageModel { Title = "My Stack", NavButtonText = "Stack"});
+        
+        Html.RenderPartial("ExpPage", new PageModel{ Title = "Experience", Icon = "search", NavButtonText = "Exp"});
+        Html.RenderPartial("MorePage", new PageModel{ Title = "More" ,Icon = "grid", NavButtonText = "More"});
+    }

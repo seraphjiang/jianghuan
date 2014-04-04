@@ -1,0 +1,35 @@
+﻿@using PersonMobilePortal.Models
+@model PersonMobilePortal.Models.PageModel
+
+<div data-role="page" id="@Model.NavButtonText.ToLowerInvariant()">
+    <div data-role="header">
+        <h1>@Model.Title</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <img src="~/Content/images/jianghuan.jpg" alt="@ProfileRepository.MyProfile.Name" />
+                <h2>@ProfileRepository.MyProfile.Name</h2>
+                <p>@ProfileRepository.MyProfile.Title</p>
+            </li>
+            <li data-role="list-divider">
+                Summary
+            </li>
+            <li>
+                <div class="list-item-text">
+                    @Html.Raw(HttpUtility.HtmlDecode(ProfileRepository.MyProfile.Summary))
+                </div>
+            </li>
+            <li data-role="list-divider">
+                Contact
+            </li>
+            <li>
+                <div>
+                    mailto:@ProfileRepository.MyProfile.Email<br />
+                    tel:@ProfileRepository.MyProfile.Tel<br />
+                </div>
+            </li>
+        </ul>
+    </div>
+    @Html.Partial("PageFooter")
+</div>

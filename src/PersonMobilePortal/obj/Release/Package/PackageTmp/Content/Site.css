@@ -1,0 +1,13 @@
+﻿
+div.list-item-text p {
+    white-space: normal !important;
+}
+
+    div.list-item-text p .first-word {
+        font-weight: bold;
+    }
+
+        div.list-item-text p .first-word:after {
+            content: ":\a";
+            white-space: pre;
+        }

@@ -1,0 +1,18 @@
+﻿@model PersonMobilePortal.Models.PageModel
+
+<div data-role="page" id="@Model.NavButtonText.ToLowerInvariant()">
+    @{
+        Html.RenderPartial("PageHeader", Model);
+    }
+    <div class="ui-content" role="main">
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <a href="#stack">
+                    <h2>Technology Stack</h2>
+                    <p>Microsoft stack</p>
+                    <p>Open stack</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
